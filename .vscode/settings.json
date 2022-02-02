@@ -1,0 +1,10 @@
+{
+    "liveServer.settings.port": 5501,
+    "autoprefixer.options": {
+		"browsers": [
+			"last 4 versions",
+			"ie >= 9",
+			"> 5%"
+		]
+	}
+}

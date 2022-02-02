@@ -1,0 +1,42 @@
+/* muutujad */
+:root {
+  --nav-height: 50px;
+  --footer-height: 50px;
+  --hero-height: 30vh;
+}
+
+.red {
+  background-color: lightcoral;
+}
+.green {
+  background-color: lightgreen;
+}
+.blue {
+  background-color: lightblue;
+}
+
+body {
+  margin: 0;
+  box-sizing: border-box;
+}
+.layout {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* seda ei ole vaja kui kujunduse ja ekraani laius on samad */
+}
+.container {
+  width: 1000px;
+}
+nav,
+footer {
+  height: 50px !important;
+}
+.hero {
+  width: 100vw;
+  height: 30vh;
+}
+main {
+  min-height: calc(
+    100vh - 50px - 30vh - 50px
+  ); /* ehk lahutada nav, main ja footer.*/
+}

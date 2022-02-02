@@ -1,0 +1,62 @@
+/* muutujad */
+:root {
+  --nav-height: 50px;
+  --footer-height: 50px;
+  --hero-height: 30vh;
+}
+
+.red {
+  background-color: lightcoral;
+}
+.redd {
+  background-color: rgb(219, 112, 112);
+}
+.green {
+  background-color: lightgreen;
+}
+.blue {
+  background-color: lightblue;
+}
+
+body {
+  margin: 0;
+  box-sizing: border-box;
+}
+.layout {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* seda ei ole vaja kui kujunduse ja ekraani laius on samad */
+}
+.full-width {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+.container {
+  width: 1000px;
+}
+nav {
+  height: var(--nav-height) !important;
+  box-sizing: border-box;
+}
+footer {
+  height: var(--footer-height) !important;
+  box-sizing: border-box;
+}
+
+.hero {
+  width: 100vw;
+  height: var(--hero-height);
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+}
+main {
+  min-height: calc(
+    100vh - var(--hero-height) - var(--nav-height) - var(--footer-height)
+  );
+}
+
+.p-1 {
+  padding: 1em;
+}
