@@ -1,0 +1,89 @@
+body {
+  display: flex;
+  gap: 15px;
+  flex-direction: column;
+  align-items: center;
+}
+.container {
+  width: 100%;
+  max-width: 1000px;
+}
+.flex-dire {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+}
+
+.direction {
+  background-color: red;
+  width: 100px;
+  height: 100px;
+}
+
+.flex-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+.wrap {
+  background-color: red;
+  width: 100%;
+  height: 100px;
+}
+.flex-grow {
+  display: flex;
+  gap: 15px;
+}
+.grow {
+  background-color: red;
+  height: 100px;
+}
+.grow:nth-child(1) {
+  flex-grow: 1;
+}
+.grow:nth-child(2) {
+  flex-grow: 3;
+}
+.grow:nth-child(3) {
+  flex-grow: 1;
+}
+.flex-shrink {
+  display: flex;
+  gap: 15px;
+}
+.shrink {
+  background-color: red;
+  height: 100px;
+  width: 50vw;
+}
+.shrink:nth-child(1) {
+  flex-shrink: 3;
+}
+.shrink:nth-child(2) {
+  flex-shrink: 1;
+}
+.shrink:nth-child(3) {
+  flex-shrink: 1;
+}
+
+.align-self {
+  display: flex;
+  gap: 15px;
+  height: 200px;
+}
+.as {
+  background-color: red;
+  height: 100px;
+  width: 50vw;
+}
+.as:nth-child(1) {
+}
+.as:nth-child(2) {
+  align-self: center;
+}
+.as:nth-child(3) {
+  align-self: flex-end;
+}

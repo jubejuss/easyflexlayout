@@ -1,6 +1,10 @@
-html {
-  font-size: 32px;
+/* muutujad */
+:root {
+  --nav-height: 50px;
+  --footer-height: 50px;
+  --hero-height: 30vh;
 }
+
 .red {
   background-color: lightcoral;
 }
@@ -29,45 +33,30 @@ body {
   justify-content: center;
 }
 .container {
-  width: 100%;
-  max-width: 32rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  width: 1000px;
 }
 nav {
-  height: 2rem;
-  line-height: 2rem; /* kui panna rea kõrguseks fondi kõrgus, saab teksti täpselt keskele */
+  height: var(--nav-height) !important;
   box-sizing: border-box;
 }
 footer {
-  height: 2rem;
-  line-height: 2rem;
+  height: var(--footer-height) !important;
   box-sizing: border-box;
 }
 
 .hero {
   width: 100vw;
+  height: var(--hero-height);
   box-sizing: border-box;
   display: flex;
   justify-content: center;
 }
-h1.container {
-  line-height: 30vh;
-  margin: 0;
-  text-align: center;
-}
 main {
   min-height: calc(
-    100vh - 30vh - 2rem - 2rem
-  ); /* sellega lükkame footeri täpselt alla */
+    100vh - var(--hero-height) - var(--nav-height) - var(--footer-height)
+  );
 }
 
 .p-1 {
-  padding: 0.5rem;
-}
-.p-2 {
-  padding: 1rem;
-}
-.p-3 {
-  padding: 2rem;
+  padding: 1em;
 }

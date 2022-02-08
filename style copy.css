@@ -1,12 +1,8 @@
-/* muutujad */
-:root {
-  --nav-height: 50px;
-  --footer-height: 50px;
-  --hero-height: 30vh;
-}
-
 .red {
   background-color: lightcoral;
+}
+.redd {
+  background-color: rgb(219, 112, 112);
 }
 .green {
   background-color: lightgreen;
@@ -24,19 +20,34 @@ body {
   justify-content: center;
   flex-wrap: wrap; /* seda ei ole vaja kui kujunduse ja ekraani laius on samad */
 }
+.full-width {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
 .container {
   width: 1000px;
 }
-nav,
-footer {
-  height: 50px !important;
+nav {
+  height: 50px;
+  box-sizing: border-box;
 }
+footer {
+  height: 50px;
+  box-sizing: border-box;
+}
+
 .hero {
   width: 100vw;
   height: 30vh;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
 }
 main {
-  min-height: calc(
-    100vh - 50px - 30vh - 50px
-  ); /* ehk lahutada nav, main ja footer.*/
+  min-height: calc(100vh - 30vh - 50px - 50px); /* sellega lükkame footeri täpselt alla
+}
+
+.p-1 {
+  padding: 1em;
 }

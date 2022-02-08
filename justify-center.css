@@ -1,0 +1,12 @@
+/* Kui f-direction on column, siis justifi on align ja aign on justify, ehk toimib vastupidiselt */
+.just {
+  display: flex;
+  gap: 15px;
+  flex-direction: column;
+  align-items: center;
+}
+.just-child {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+}
